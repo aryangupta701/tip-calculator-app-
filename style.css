@@ -1,0 +1,28 @@
+.calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    padding: 15px;
+   
+   
+}
+.calculator > div {
+   margin: 10px;
+   padding: 10px;
+   
+   
+}
+
+#SelectPercentage{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+#SelectPercentage>li
+{
+    width: 50px;
+    text-decoration: none;
+}
