@@ -9,41 +9,60 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body >
-    <div style="height: 100px;">
-
+    <div id="heading">
+        S P L I<br>T T E R
     </div>
 <div class="calculator">
- <div>
+ <div id="userinputtab">
 Bill
 <br>
-<input type="number">
+<input type="text" id="bill-input">
+
 <br>
 Select Tip %
 <ul class="list-unstyled" id="SelectPercentage">
-    <li>5%</li>
-    <li>10%</li>
-    <li>15%</li>
-    <li>25%</li>
-    <li>50%</li>
-    <li>Custom</li>
+    <li><button class="percentage-button" value="5%">5%</button></li>
+    <li><button class="percentage-button" value="10%">10%</button></li>
+    <li><button class="percentage-button" value="15%">15%</button></li>
+    <li><button class="percentage-button" value="25%">25%</button></li>
+    <li><button class="percentage-button" value="50%">50%</button></li>
+    <li><button class="custom-button" value="Custom">Custom</button></li>
 </ul>
 <br>
 Number of People<br>
-<input type="number">
+<input type="text" id="number-persons">
+
  </div>
  <div>
+  <div id="answer-bar">
+    <div>
+        Tip amount<br>/person<br>
+        Total <br>
+        /person
+       </div>
+       <div>
+        <ul class="list-unstyled">
+            <li id="tip-person">
+                00
+            </li>
+            <li id="Total-person">
+                00
+            </li>
+        </ul>
+       </div>
+  </div>
    <div>
-    Tip amount<br>/person
-    Total 
-    /person
-   </div>
- <div>
-    <button>Reset</button>
+    <button id="Reset-button" value="reset">Reset</button>
 </div>
+ 
  </div>
+
 </div>
 
 <script src="script.js"></script>
