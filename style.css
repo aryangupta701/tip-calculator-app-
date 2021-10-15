@@ -1,3 +1,113 @@
+@media only screen and (max-width: 1300px)
+{
+body{
+    font-size: 15px;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(197, 228, 231);
+}
+.calculator {
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 550; 
+}
+.calculator > div {
+   margin: 10px;
+   padding: 10px;
+  
+}
+
+#SelectPercentage{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 180px;
+margin-left: 0px;
+
+}
+#SelectPercentage>li
+{
+    width: 60px;
+    text-decoration: none;
+
+}
+#userinputtab{
+    width: 315px;
+}
+#heading{
+    font-weight: 700;
+    width: 80px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#answer-bar{
+    display: flex;
+}
+input{
+    background-color: hsl(185, 41%, 84%);
+    border:none;
+    border-radius: 4px;
+    text-align: right;
+    width: 270px;
+    line-height: 35px;
+}
+#custom-input{
+    width:100px;
+    margin: 5px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 10px;
+}
+#right-box{
+    background-color: hsl(183, 100%, 15%);
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#Reset-button{
+    background-color: hsl(172, 67%, 45%);
+    margin: auto;
+    line-height: 35px;
+    width:270px;
+}
+.percentage-button{
+    color: white;
+    width: 100px;
+    background-color: hsl(183, 100%, 15%);
+}
+.percentage-button:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+#custom-button-child{
+    width: 80px;
+    background-color: hsl(189, 41%, 97%)
+}
+.list-percentage{
+    line-height: 35px;
+    width: 80px;
+    margin: 5px;
+  
+}
+button{
+    text-decoration: none;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+}
+.right-answers{
+
+    margin-left:90px;
+    margin-bottom: 20px;
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+}
+}
+@media only screen and (min-width: 1301px)
+{
 body{
     font-family: 'Space Mono', monospace;
     background-color: rgb(197, 228, 231);
@@ -108,3 +218,5 @@ button{
     color: hsl(172, 67%, 45%);
     font-size: 30px;
 }
+}
+
