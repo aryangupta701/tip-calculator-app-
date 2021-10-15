@@ -17,8 +17,8 @@ resetbutton.addEventListener('click',()=>{
     person=1
     bill.value=''
     NumberOfPeople.value=''
-    tipperson.innerText='00'
-    totalperson.innerText='00'
+    tipperson.innerHTML='<i class="fas fa-dollar-sign"></i>00'
+    totalperson.innerHTML='<i class="fas fa-dollar-sign"></i>00'
     newLi.parentElement.appendChild(oldLi)
     newLi.remove()
 
@@ -27,16 +27,16 @@ resetbutton.addEventListener('click',()=>{
 bill.addEventListener('keyup',(event)=>{
 billvalue=event.target.value
 tipamount=parseInt(tippercentage)*parseInt(billvalue)/100
-tipperson.innerText=(tipamount/person).toFixed(2)
-totalperson.innerText=((tipamount+parseInt(billvalue))/person).toFixed(2)
+tipperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${(tipamount/person).toFixed(2)}`
+totalperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${((tipamount+parseInt(billvalue))/person).toFixed(2)}`
 })
 
 for(let i=0;i<5;i++)
 percentagebutton[i].addEventListener('click',()=>{
     tippercentage=percentagebutton[i].innerText
     tipamount=parseInt(tippercentage)*parseInt(billvalue)/100
-    tipperson.innerText=(tipamount/person).toFixed(2)
-    totalperson.innerText=((tipamount+parseInt(billvalue))/person).toFixed(2)
+tipperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${(tipamount/person).toFixed(2)}`
+totalperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${((tipamount+parseInt(billvalue))/person).toFixed(2)}`
     
 })
 oldLi.addEventListener('click',()=>{
@@ -45,14 +45,14 @@ oldLi.addEventListener('click',()=>{
     newLi.addEventListener('keyup',(event)=>{
         tippercentage=parseInt(event.target.value)
         tipamount=tippercentage*parseInt(billvalue)/100
-        tipperson.innerText=(tipamount/person).toFixed(2)
-    totalperson.innerText=((tipamount+parseInt(billvalue))/person).toFixed(2)
+        tipperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${(tipamount/person).toFixed(2)}`
+totalperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${((tipamount+parseInt(billvalue))/person).toFixed(2)}`
     })
 })
 
 
 NumberOfPeople.addEventListener('keyup',(event)=>{
     person=parseInt(event.target.value)
-    tipperson.innerText=(tipamount/person).toFixed(2)
-    totalperson.innerText=((tipamount+parseInt(billvalue))/person).toFixed(2)
+    tipperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${(tipamount/person).toFixed(2)}`
+totalperson.innerHTML=`<i class="fas fa-dollar-sign"></i>${((tipamount+parseInt(billvalue))/person).toFixed(2)}`
 })

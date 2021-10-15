@@ -103,11 +103,8 @@ button{
     border-radius: 3px;
 }
 .right-answers{
-    margin-left:20px;
+    margin-left:30px;
     margin-bottom: 20px;
     color: hsl(172, 67%, 45%);
     font-size: 30px;
-}
-.icon-personname{
-    background-image: url(images/icon-person.svg);
 }
