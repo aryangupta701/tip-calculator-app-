@@ -20,43 +20,58 @@ crossorigin="anonymous">
     </div>
 <div class="calculator">
  <div id="userinputtab">
-Bill
+<small>
+    Bill
+</small>
 <br>
 <input type="text" id="bill-input">
 
-<br>
-Select Tip %
+<br><br>
+<small>
+    Select Tip %
+</small>
 <ul class="list-unstyled" id="SelectPercentage">
-    <li><button class="percentage-button" value="5%">5%</button></li>
-    <li><button class="percentage-button" value="10%">10%</button></li>
-    <li><button class="percentage-button" value="15%">15%</button></li>
-    <li><button class="percentage-button" value="25%">25%</button></li>
-    <li><button class="percentage-button" value="50%">50%</button></li>
-    <li id="custom-button" ><button id="custom-button-child" value="Custom">Custom</button></li>
+    <li class="list-percentage"><button class="percentage-button" value="5%">5%</button></li>
+    <li class="list-percentage"><button class="percentage-button" value="10%">10%</button></li>
+    <li class="list-percentage"><button class="percentage-button" value="15%">15%</button></li>
+    <li class="list-percentage"><button class="percentage-button" value="25%">25%</button></li>
+    <li class="list-percentage"><button class="percentage-button" value="50%">50%</button></li>
+    <li class="list-percentage" id="custom-button" ><button id="custom-button-child" value="Custom">Custom</button></li>
 </ul>
-<br>
-Number of People<br>
+<br><br>
+<small>
+    Number of People
+</small><br>
 <input type="text" id="number-persons">
 
  </div>
- <div>
+ <div id="right-box">
   <div id="answer-bar">
-    <div>
-        Tip amount<br>/person<br>
-        Total <br>
-        /person
+    <div >
+       <small>
+        <span style="color: hsl(189, 41%, 97%)">Tip amount</span> <br><small style="color: hsl(185, 41%, 84%);">/person</small>
+       </small><br><br>
+        <small>
+            <span style="color: hsl(189, 41%, 97%)">Total</span> <br>
+        <small style="color: hsl(185, 41%, 84%);" >/person</small>
+        </small>
        </div>
        <div>
         <ul class="list-unstyled">
-            <li id="tip-person">
+            <li class="right-answers" id="tip-person">
                 00
             </li>
-            <li id="Total-person">
-                00
+            
+            <li class="right-answers" id="Total-person">
+               00
             </li>
         </ul>
        </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br><br>
    <div>
     <button id="Reset-button" value="reset">Reset</button>
 </div>
